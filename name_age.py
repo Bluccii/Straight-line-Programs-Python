@@ -6,4 +6,4 @@ name = str(sys.argv[1]) # Saves first command-line argument as a string variable
 age = int(sys.argv[2]) # Saves second command-line argument as a integer variable called "age"
 
 # Write the message 'name is age years old.' to standard output.
-stdio.writeln(f"Hi, my name is {name}, and I am {age} year(s) old.")
+stdio.writeln(f"{name} is {age} year(s) old.")

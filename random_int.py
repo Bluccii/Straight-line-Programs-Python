@@ -7,7 +7,7 @@ a = int(sys.argv[1]) # Saves first command-line argument as an integer var calle
 b = int(sys.argv[2]) # Saves second command-line argument as an integer var called "b"
 
 # Set r to a random integer between a and b, obtained by calling stdrandom.uniformInt().
-r = stdrandom.uniformInt(a, b)
+r = stdrandom.uniformInt(a, b) # Setting r to a random number between [a, b)
 
 # Write r to standard output.
 stdio.writeln(r)

@@ -8,7 +8,7 @@
     <content url="file://$USER_HOME$/lib/stdlib-python">
       <sourceFolder url="file://$USER_HOME$/lib/stdlib-python" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">

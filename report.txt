@@ -1,76 +1,117 @@
-1. Enter the number of hours it took you to complete the project between
-   the <<< and >>> signs below (eg, <<<10>>>).
-
-   <<< >>>
-   
-2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
-   between the <<< and >>> signs below (eg, <<<3>>>).
-
-   <<< >>>
-
-3. Did you receive help from anyone? List their names, status (classmate,
-   CS110 grad, TA, other), and the nature of help received.
-
-   Name               Status       Help Received
-   ----               ------       -------------
-
-   ...                ...          ...
-
-4. Provide a short description of how you approached each problem, issues you
+Provide a short description of how you approached each problem, issues you
    encountered, and how you resolved those issues.
 
    Problem 1 (Day of the Week)
-      Approach: ...
+      Approach: I started out by naming inputs to the terminal to variables
+        using the sys.argv function for inputs of the month, day, and year.
+        Then by using these inputs, I calculated the necessary data needed to
+        output the day of the week, and used a stdio.writeln function to
+        display which day of the week it is from the calculation.
 
-      Issues and resolution: ...
+      Issues and resolution: I had an issue with something about data types,
+      but I fixed it by adding in some brackets to specify which operations
+      are to be done first.
 
    Problem 2 (Mercator Projection)
-      Approach: ...
+      Approach: I started out by naming inputs to the terminal to variables
+        using the sys.argv function for inputs of the latitude and
+        longitude.Then by using these inputs, I first, converted the latitude
+        value to radians since it will go through a 'sin' calculation, then I
+        used the longitude and the radian version of the latitude to
+        calculate the x and y co-ordinates. I then used a stdio.writeln
+        function to display both x and y co-ordinates.
 
-      Issues and resolution: ...
+      Issues and resolution: I ran into no issues.
 
    Problem 3 (Great Circle Distance)
-      Approach: ...
+      Approach: I started out by naming inputs to the terminal to variables
+      using the sys.argv function for inputs of two co-ordinates x1 and y1,
+      then x2 and y2. Since there will be sin and cos calculations in the
+      main expression, I converted all the co-ordinates to radians. Using the
+      radian values for all of the co-ordinates, I put them into the function
+      needed to calculate the distance of the great-circle, and used a
+      stdio.writeln function to display the distance as an output.
 
-      Issues and resolution: ...
+      Issues and resolution: I ran into a very big issue within the order of
+      my inputs, I made the input order x1, x2, y1, y2, so when I used the
+      sample values,the distance came out wrong. I was staring at my code for
+      like 1 to 2 hours until I realized. I then changed the order to x1, y1,
+      x2, y2 and it solved the problem.
 
    Problem 4 (Wind Chill)
-      Approach: ...
+      Approach: I started out by naming inputs to the terminal to variables
+      using the sys.argv function for inputs of t and v. I then used the
+      inputted values in a formula to calculate the wind chill, and then used
+      a stdio.writeln function to display the wind chill as the output.
 
-      Issues and resolution: ...
+      Issues and resolution: I ran into no issues.
 
    Problem 5 (Gravitational Force)
-      Approach: ...
+      Approach: I started out by naming inputs to the terminal to variables
+      using the sys.argv function for inputs of m1, m2 and r. I also defined
+      g as the value of a gravitational constant. I then used the inputted
+      values in formula that calculated the gravitational force as a variable
+      of f. I then used a stdio.writeln function to print out f.
 
-      Issues and resolution: ...
+      Issues and resolution: I had an issue where I used (** 10 x 11) instead
+      of e11, I fixed it by replacing it the (** 10 x 11) with e11.
 
    Problem 6 (Snell's Law)
-      Approach: ...
+      Approach: I started out by naming inputs to the terminal to variables
+      using the sys.argv function for inputs of angle1, n1 and n2. I then
+      rearranged the equation to make angle2 the subject. Using the
+      rearranged formula, I used it to calculate angle2. After calculating
+      angle2, i converted it back to degrees and then used a stdio.writeln
+      function to display the angle of refraction.
 
-      Issues and resolution: ...
+      Issues and resolution: I ran into no issues.
 
    Problem 7 (Gambler's Ruin)
-      Approach: ...
+      Approach: I started out by naming inputs to the terminal to variables
+      using the sys.argv function for inputs of n1, n2, and pn. I then
+      defined qn as the calculation of 1 - pn. I then used all the other
+      inputs along with qn to calculate p1 and p2, the probabilities of
+      player 1 and player 2, I then used a couple of stdio.write and
+      stdio.writeln functions to display the two probabilities.
 
-      Issues and resolution: ...
+      Issues and resolution: I ran into a problem that didn't let me put use
+      the variables 'p' and 'q', therefore I added a 'n' infront of them, and
+      it seemed to work.
 
    Problem 8 (Waiting Time)
-      Approach: ...
+      Approach: I started out by naming inputs to the terminal to variables
+      using the sys.argv function for inputs of Î» and t. I then used the
+      inputted values in a formula to calculate the waiting time as 'p', and
+      then used a stdio.writeln function to display the waiting time as the
+      output.
 
-      Issues and resolution: ...
+
+      Issues and resolution: I ran into no issues.
 
    Problem 9 (Die Roll)
-      Approach: ...
+      Approach: I started out by naming inputs to the terminal to variables
+      using the sys.argv function for the input of n, n being the number of
+      sides of the die. I then used the stdrandom.uniformint() function to
+      find random numbers between the range of 1 and 6. I repeated this and
+      then added the two random integers together to create the number
+      rolled. I then used a stdio.writeln function to display the number
+      rolled as the output.
 
-      Issues and resolution: ...
+      Issues and resolution: I ran into an issue where it would only give me
+      random integers from 1-5. I quickly found out that it was because the
+      last digit in a range is not within reach of the random function,
+      therefore I added 1 to n to allow it to find a random int from 1-6
+      instead.
 
    Problem 10 (Three Sort)
-      Approach: ...
+      Approach:  started out by naming inputs to the terminal to variables
+      using the sys.argv function for the input of x, y and z. I then used
+      min and max functions to find the smallest and largest value. I then
+      found the sum of all values given, and then subtracted both the
+      smallest and largest value to get the middle value. I then used
+      stdio.writeln functions to display the smallest, middle, and largest
+      value as the output.
 
-      Issues and resolution: ...
-
-5. List any other comments here. Feel free to provide any feedback on how
-   much you learned from doing the assignment, and whether you enjoyed
-   doing it.
-
-   ...
+      Issues and resolution: I ran into a problem where I decided I wanted to
+      display my output a different way, but that was what was causing my
+      code to be wrong, so I changed it to another format, and it worked.

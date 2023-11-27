@@ -8,7 +8,7 @@ m2 = float(sys.argv[2])
 r = float(sys.argv[3])
 G = 6.674e-11
 
-# Calculates the value of gravitational force
+# Calculates the value of gravitational force, f
 f = G * m1 * m2 / (r ** 2)
 
 # Displays the value of gravitational force as output
